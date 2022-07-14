@@ -5,10 +5,11 @@ body {
     text-align: center;
     font-family: 'Helvética';
     
-    margin-left: 32%;
-    margin-right: 32%;
+    margin-left: 40%;
+    margin-right: 40%;
 
 }
+
 
 h1 {
     color: white;
@@ -161,3 +162,15 @@ h4 {
     max-width: 500px;
     max-height: 700px;
 }
+
+.gatilhos {
+    position: absolute;
+}
+
+.gatilhos > div {
+    border: 1px solid black;
+    height: 100vh;
+    width: 100vw;
+}
+
+
