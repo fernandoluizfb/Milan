@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+
+}
+
 body {
     background-color: #AC0101;
     color: white;
@@ -5,11 +10,14 @@ body {
     text-align: center;
     font-family: 'Helvética';
     
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+
+    overflow-x: hidden;
 
 }
-
 
 h1 {
     color: white;
@@ -18,6 +26,45 @@ h1 {
     margin-bottom: 125px;
     font-size: 40px;
 
+}
+
+.slide {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(100vw, 0);
+    transition: transform .5s;
+
+}
+
+.slide.slide-ativo {
+    transform: translate(0, 0);
+}
+
+.btn-proximo {
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+    text-align: right;
+
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    z-index: 2;
+    left: 0;
+
+
+}
+
+.foto {
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 8px;
 }
 
 .escudo-milan > img {
@@ -69,6 +116,7 @@ h1 {
 }
 
 .san-siro > img { 
+    width: 100%;
     max-width: 500px;
     max-height: 600px;
     border-radius: 8px;
@@ -162,15 +210,3 @@ h4 {
     max-width: 500px;
     max-height: 700px;
 }
-
-.gatilhos {
-    position: absolute;
-}
-
-.gatilhos > div {
-    border: 1px solid black;
-    height: 100vh;
-    width: 100vw;
-}
-
-
